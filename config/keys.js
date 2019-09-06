@@ -1,4 +1,4 @@
 module.exports = {
-  mogoUrl : 'mongodb+srv://mdzz:2273091645@cluster0-9gwjm.mongodb.net/test?retryWrites=true',
+  mogoUrl : 'mongodb://127.0.0.1:27017/blog',
   secretOrkeys:'secret'
 }

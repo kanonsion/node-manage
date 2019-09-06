@@ -13,6 +13,15 @@ let AriticeSchema = Schema({
   content:{
     type:String,
     require:true
+  },
+  tagId:{
+    type:mongoose.Schema.ObjectId,
+    require:true,
+    ref:'tags'
+  },
+  watch:{
+    type:Number,
+    default:1
   }
 })
 
