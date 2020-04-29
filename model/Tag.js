@@ -1,16 +1,20 @@
-const mongoose = require('mongoose')
-const Schema = mongoose.Schema
+const mongoose = require("mongoose");
+const Schema = mongoose.Schema;
 
 let tagSchema = new Schema({
-  tag:{
-    required:'true',
-    type:String,
-    default:'vue'
+  tag: {
+    required: true,
+    type: String,
   },
-  date:{
-    type:Date,
-    default:Date.now
-  }
-})
+  tagColor: {
+    required: true,
+    type: String,
+    default: "rgba(0,0,0,1)",
+  },
+  date: {
+    type: Date,
+    default: Date.now,
+  },
+});
 
-module.exports = tags = mongoose.model('tags',tagSchema)
+module.exports = tags = mongoose.model("tags", tagSchema);
