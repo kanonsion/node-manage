@@ -149,7 +149,7 @@ router.post("/classify/:tag", (req, res) => {
           .sort({ date: -1 })
           .then((aritice) => {
             let newAritice = {};
-            newAritice.aritices = Object.assign({}, aritice);
+            newAritice.aritices = aritice;
             newAritice.total = count;
             newAritice.tag = tag.tag;
             res.json(newAritice);
